@@ -1,0 +1,16 @@
+Base case:
+fact(1) = 1:
+n > i thus it returns 1.
+
+Inductive step:
+Assume:
+1*0! + 2*1! + ... + n*(n-1)! = n!
+               n! + n*(n-1)! =
+?????????????????????????????????
+         
+
+/*
+Since we know that fact(1) is true, then the function will always find the factorial,
+because no matter what, the program will hit our base case. Thus proving it works for
+every value of n as input.
+*/
