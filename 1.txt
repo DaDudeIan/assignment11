@@ -14,10 +14,11 @@ Inductive step:
 Assume true for some k > 1 
 fact(k) = k * fact(k-1)
 
-If fact(k-1) is correct then: 
-fact(k) = k + [factorial of integers 1 to (k-1)], k > 1. 
-
-fact(k+1) = (k+1) * fact(k+1-1) = (k+1) * fact(k) 
+Suppose k = 3.
+Then fact(3) is correct if fact(2) is correct.
+fact(2) is correct if fact(1) is correct.
+We have already proven that fact(1) is correct. 
+Therefore fact(2) is correct, and fact(3) is correct.
 
 
 
