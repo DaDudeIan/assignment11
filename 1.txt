@@ -2,9 +2,20 @@ Base case:
 fact(1) = 1:
 n > i thus it returns 1.
 
+Suppose fact() has been given input 2
+It will return:
+        2 * fact(2-1)
+    =   2 * fact(1)
+
+We already proved that fact(1) = 1 so:
+    2 * fact(1) = 2 * 1 = 2
+
 Inductive step:
 Assume true for some k > 1 
 fact(k) = k * fact(k-1)
+
+If fact(k-1) is correct then: 
+fact(k) = k + [factorial of integers 1 to (k-1)], k > 1. 
 
 fact(k+1) = (k+1) * fact(k+1-1) = (k+1) * fact(k) 
 
